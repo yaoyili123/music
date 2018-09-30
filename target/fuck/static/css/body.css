@@ -1,0 +1,52 @@
+/*---------------通用布局----------*/
+* {
+	margin:0px;
+    padding:0px;
+    list-style:none;
+	font-family:"微软雅黑";
+	font-size:16px;
+	text-decoration:none;
+	color:#333;
+	word-wrap: break-word;	/*规定了单词的换行*/
+    word-break: break-word;
+}
+
+/*去除水平滚动条*/
+body {
+    overflow: -scroll;
+	overflow-x:hidden;
+	background-color: #f6f6f6;
+	height: 100%;
+}
+
+/*超链接高亮*/
+a:hover{
+	color: red;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+ /*限制字长*/
+.info h4, h1, h2, h3, p, li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.right-float{
+    float: right;
+}
+
+/*竖直滚动条*/
+.roller_y {
+	overflow-y: auto;
+}
+
+.clear {
+	clear: both;
+}

@@ -1,0 +1,435 @@
+/*-------------------------内容部分通用---------------------------*/
+article{
+    margin: 0 auto;
+    background: #fff;
+    width: 1050px;
+    color: black;
+    margin-top: 10px;
+}
+
+article *{
+    font-size: 14px; 
+}
+
+/*-----卡片效果-----*/
+.card{
+    border-radius:2px;
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);
+    box-sizing: border-box;
+}
+
+/*------------------宽部分布局--------------------------*/
+.wide{
+    width: 748px;
+    display: inline-block;
+    border: 1px solid #d3d3d3;
+    border-width: 0 1px 0 0;
+    padding: 20px 20px 40px;
+}
+
+/*-------拓展：整框----------*/
+.full{
+    width: 1010px;
+}
+
+.full-list li{
+    padding-left: 70px;
+}
+
+/*-----------------宽部分标题---------------------*/
+.wide-title{
+    height: 33px;
+    padding: 0 12px 0 14px;
+    border-bottom: 2px solid #C10D0C;
+    position: relative;
+}
+
+/*左侧大标题*/
+.left-title{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+} 
+
+/*右侧链接*/
+.more{
+    position: absolute;
+    right: 0px;
+    font-weight: normal;
+    font-size:12px;
+}
+
+
+/*----------------图块列表-------------------*/
+.block-list{
+    margin: 20px 0 0 -42px;
+    height: 500px;
+}
+
+.block-list li {
+    width: 140px;
+    height: 204px;
+    padding-left: 42px;
+    float: left;
+    overflow: hidden;
+    padding: 0 0 30px 50px;
+    line-height: 1.4;
+}
+
+/*---单个图块--*/
+.block-item{
+    width: 140px;
+    height: 140px;
+    position: relative;
+    display: block;
+}
+
+.block-item img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.block-item a:hover{
+    box-shadow: 0 3px 5px 5px #666;
+}
+
+.block-item a{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.block-list li p{
+    margin: 8px 0 3px;
+}
+
+/*-----------------------窄框-------------------*/
+
+.narrow{
+    width: 261px;
+    min-height: 500px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.narrow-title{
+    position: relative;
+    height: 23px;
+    margin: 0 20px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    font-size: 100%;
+}
+
+.narrow-left{
+    border-right: 1px solid #d3d3d3;
+    width: 260px;
+    height: 500px;
+}
+
+/*------------小图片列表---------------*/
+
+.one-list{
+    margin: 6px 0 14px 20px;
+    display: block;
+}
+
+.one-list li{
+    margin-top: 14px;
+    display: inline-block;
+    width: 210px;
+    height: 62px;
+    background: #fafafa;
+    position: relative;
+}
+
+.one-list img{
+    width: 62px;
+    height: 62px;
+}
+
+.head{
+    float: left;
+}
+
+.info{
+    float: left;
+    width: 132px;
+    height: 60px;
+    padding-left: 14px;
+    border: 1px solid #e9e9e9;
+    border-left: none;
+}
+
+.info p{
+    font-size: 12px;
+}
+
+/*----选中-----*/
+.selected2{
+    background: #e9e9e9;
+}
+
+.selected2 .info{
+    background: #e9e9e9;
+}
+
+.info p, h4{
+    margin-top: 8px;
+}
+
+
+/*------------------类型列表-------------------*/
+.type{
+    background: #f9f9f9;
+    margin-top: 0px;
+    padding-left: 20px;
+    width: 190px;
+    height: 587px;
+    border: 1px solid #d3d3d3;
+    border-width: 0 1px;
+}
+
+.type-wide{
+    width: 790px;
+}
+
+.type-list{
+    margin-top: 15px;
+}
+
+.type-list li{
+    width: 160px;
+    height: 29px;
+    line-height: 29px;
+    margin-bottom: 20px; 
+}
+
+.type-list li a {
+    padding-left:20px;
+}
+
+.type-list a:hover{
+    display: block;
+    background: red;
+    color: white;
+}
+
+/*---已被选择----*/
+.selected {
+    display: block;
+    background: red;
+    color: white;
+}
+
+/*-------------------------详情样式------------------------*/
+
+/*---------详情图片--------------*/
+.detail-img{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px; 
+    height: 206px;
+    width: 206px;
+    text-align: center;
+    border: 1px solid black;
+    padding-top: 2px;
+    box-shadow: 2px 2px 2px 2px #3e3e3e;
+}
+
+.detail-img img{
+    height: 200px;
+    width: 200px;
+}
+
+/*---------详情信息--------------*/
+.detail-info{
+    padding-top: 10px;
+    margin-left:250px; 
+    min-height: 250px;
+}
+/*---------详情标题----------*/
+.info-title{
+    line-height: 24px;    
+}
+
+.info-title img{
+    width: 54px;
+    height: 24px;
+    overflow: hidden;
+    vertical-align: middle;
+    float: left;
+}
+
+.info-title>div{
+    margin-left: 72px;
+}
+
+.info-title h2{
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.info-add{
+    margin-top: 15px;
+    color: #666;
+    margin-bottom: 30px; 
+}
+
+/*---------详情部分的按钮----------*/
+.buttons button{
+    background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.buttons img{
+    position: absolute;
+    top:10px;
+    left:22px;
+}
+
+.detail-list{
+    min-height: 200px;
+}
+
+/*--------------------歌曲列表-------------------*/
+.song-list{
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+.song-list .first{
+    width: 40%;
+}
+
+.song-list .second{
+    width: 15%; 
+}
+
+.song-list .album{
+    width: 30%;
+}
+
+.song-list thead th{
+    border: 1px solid #d9d9d9;
+}
+
+.song-list th{
+    height: 38px;
+    background-color: #f7f7f7;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    vertical-align: top;
+    text-align: left;
+    font-weight: normal;
+    color: #666;
+}
+
+.song-list .wp{
+    height: 18px;
+    line-height: 18px;
+    padding: 8px 10px;
+}
+
+.song-list .text{
+    width: 100%;
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.song-list a:hover{
+    text-decoration:underline;
+    color: red;
+}
+
+.song-list .highlight td{
+    background-color:#f7f7f7;
+}
+
+/*-------歌手细节列表的选项---------*/
+.detail-ul{
+    height: 39px;
+}
+
+.detail-ul li , .detail-ul a, .detail-ul em{
+    float: left;
+    height: 39px;
+}
+
+.detail-ul li{
+    border: 1px solid #ccc;
+    border-width:1px;
+    background: #f7f7f7;
+}
+
+.detail-ul a {
+    height: 37px;
+    width: 137px;
+    padding: 2px 2px 0 0;
+    line-height: 37px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.detail{
+    width:90%;
+    text-align:left;
+}
+
+/*---------歌单编辑选项---------*/
+.oper{
+    position: absolute;
+    right: 0px;
+    top: 7px;
+}
+
+.oper a{
+    margin-right: 10px;
+    float: left;
+}
+.oper a img {
+    width: 13px;
+    height: 13px;
+}
+
+/*-----错误页面----*/
+.error {
+    vertical-align: middle;
+    position: relative;
+}
+.error-info{
+    margin-top: 150px;
+    display: inline-block;
+    font-size: 40px;
+    position: absolute;
+    right: 10px;
+    top:10px;
+    height: 500px;
+    width: 500px;
+}
+
+/*------搜索结果页---*/
+.result{
+    margin: 0 auto;
+    width: 739px;
+    min-height: 500px;
+}

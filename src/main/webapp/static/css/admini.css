@@ -1,0 +1,48 @@
+.admini{
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    min-height:643px;
+    padding: 40px;
+    color: white !important;
+}
+
+.admini_list{
+    text-align: center;
+    padding-top: 54px;
+    width: 96%;
+    color: white !important;
+}
+
+.admini_list h2, .admini_list td, .admini_list a, .admini_list form{
+    color: white !important;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.jay{
+    background: url("../images/zhoujielun.jpg");
+}
+.cyx{
+    background: url("../images/cyx.jpg");
+}
+.lf{
+    background: url("../images/l3.png");
+}
+.smoke{
+    background: url("../images/k1.png");
+}
+
+.admini_list table, form{
+    margin: 0 auto;
+}
+
+.admini_list table td{
+     min-width: 30px;
+}
+
+.admini_list table .action{
+    width: 5%;
+}

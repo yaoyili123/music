@@ -1,0 +1,122 @@
+/*-----------导航条基本布局---------------*/
+.nav_background {
+    width:100%;	  
+    background-color: #242424;     
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);	 
+}
+
+nav {
+	margin:0 auto;    
+	width:1200px;
+	position:relative;
+	height: 55px;
+}
+
+.logo {
+    top:12px;
+    height: 37px;
+    width: 222px;
+    position: absolute;
+}
+
+nav ul{
+    position: absolute;
+    left: 222px;
+}
+
+nav li{
+	display:inline-block;
+    height: 55px;
+    width: 90px;
+    text-align: center;
+    line-height: 55px;
+}
+
+nav li a, .auth a{
+    display: inline-block;
+    width: 90px;
+	color: #bebebe;
+}
+
+nav li a:hover, .auth a:hover{
+    background-color: red;
+    color: #ffffff;
+}
+
+/* -----------右侧认证框--------------- */
+.auth {
+    line-height: 55px;
+    float: right;
+}
+
+/*--------搜索框---------*/
+.auth form {
+    display: inline-block;
+}
+
+.auth form input:first-child {
+    border: 5px solid red;
+    height: 20px;
+    border-radius: 25px;
+    outline:none;
+    color:#bebebe;
+}
+
+.auth form input:last-child {
+    vertical-align: middle;
+}
+
+.register, .login, .logined {
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+}
+
+/*-----当前页面导航高亮-------*/
+.cur-index{
+    background-color: red;
+    color: #ffffff;
+}
+
+/*-----------------下拉菜单-------------*/
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content
+{
+    display:none;
+    top:55px;
+	position:absolute;
+    background-color:#242424;
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);
+	width:90px;
+	z-index:2;
+}
+
+.dropdown-content a
+{
+	color:#bebebe;
+	display:block;
+	text-align:center;
+}
+
+.dropdown-content a:hover
+{
+    background-color:red;
+    color:#ffffff;
+}
+
+.dropdown:hover .dropdown-content
+{
+	display:block;
+}
+
+/*----------用户信息-------------*/
+.logined img{
+    border-radius: 30px;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    vertical-align: middle;
+}
